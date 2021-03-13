@@ -1,10 +1,23 @@
 import React from 'react';
-import { Box } from '../../../foundation/layout/Box';
+import styled from 'styled-components';
+
+const NavWrapper = styled.ul`
+  display: flex;    
+  flex: 2;
+  justify-content: flex-end;
+  align-items: center;  
+  
+  li {
+    margin: 0 20px;
+  };
+  
+`;
 
 export default function Nav() {
   return (
-    <Box>
-      <h3>nav</h3>
-    </Box>
+    <NavWrapper>
+      <li>sobre mim</li>
+      <li>projetos</li>
+    </NavWrapper>
   );
 }
