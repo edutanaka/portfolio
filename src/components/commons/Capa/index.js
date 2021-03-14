@@ -1,10 +1,16 @@
 import React from 'react';
-import { Box } from '../../foundation/layout/Box';
+import styled from 'styled-components';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
-export default function Capa() {
+const CapaWrapper = styled.div`
+  ${propToStyle('flex')}  
+`;
+
+export default function Capa(props) {
   return (
-    <Box>
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <CapaWrapper {...props}>
       <h1>Capa</h1>
-    </Box>
+    </CapaWrapper>
   );
 }

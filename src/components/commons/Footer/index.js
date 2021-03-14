@@ -1,21 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
 const FooterWrapper = styled.div`
-  padding: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px; 
-  padding-right: 28px;
-  padding-left: 28px;
-  background-color: #FAFAFA;
-  color: black;
+  ${propToStyle('display')}
+  ${propToStyle('flex')}
+  ${propToStyle('align-items')}
+  ${propToStyle('justify-content')}  
 `;
 
-export default function Footer() {
+export default function Footer(props) {
   return (
-    <FooterWrapper>
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <FooterWrapper {...props}>
       rodapé
     </FooterWrapper>
   );

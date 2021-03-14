@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
 const SectionTitleWrapper = styled.div`
-  outline: 1px solid orange;
+  ${propToStyle('flex')}
 `;
 
-export default function SectionTitle() {
+export default function SectionTitle(props) {
   return (
-    <SectionTitleWrapper>
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <SectionTitleWrapper {...props}>
       Meus Projetos
     </SectionTitleWrapper>
   );

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const NavWrapper = styled.ul`
   display: flex;    
-  flex: 2;
+  flex: 1;
   justify-content: flex-end;
   align-items: center;  
   

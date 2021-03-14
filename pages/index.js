@@ -14,15 +14,25 @@ export default function Home() {
       flexWrap="wrap"
       flexDirection="column"
       justifyContent="space-between"
-      backgroundImage="url(/images/bubbles.svg)"
-      backgroundRepeat="no-repeat"
-      backgroundPosition="bottom right"
     >
-      <Capa />
-      <Cabecalho />
-      <SectionTitle />
-      <WrapperProjetos />
-      <Footer />
+      <Capa
+        flex="3"
+      />
+      <Cabecalho
+        flex="1"
+      />
+      <SectionTitle
+        flex="1"
+      />
+      <WrapperProjetos
+        flex="8"
+      />
+      <Footer
+        display="flex"
+        flex="1"
+        align-items="center"
+        justify-content="center"
+      />
     </Box>
   );
 }
