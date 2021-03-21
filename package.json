@@ -6,10 +6,10 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore .",
-    "commit": "cz"
+    "commit": "cz",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^12.0.1",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
@@ -18,6 +18,7 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^12.0.1",
     "babel-plugin-styled-components": "^1.8.0",
     "commitlint": "^12.0.1",
     "cz-conventional-changelog": "3.3.0",
